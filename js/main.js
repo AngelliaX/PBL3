@@ -1,0 +1,1 @@
+AUI().ready("liferay-hudcrumbs","liferay-navigation-interaction",(function(a){var i=a.one("#navigation");i&&i.plug(Liferay.NavigationInteraction);var n=a.one(".site-breadcrumbs");n&&n.plug(a.Hudcrumbs)}));

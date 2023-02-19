@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html class="ltr" dir="ltr" lang="en-US">
+  <head>
+    <title>Home - Petly.com</title>
+    <!--
+    Version:      2021.1.4
+    Build #:      185
+    Revision:     b5052c7
+    Branch:       master
+    Built On:     9-Sep-2021 at 08:12 PM, UTC
+  	-->
+    <script src="js/jquery-1.7.2.min.js" type="text/javascript"></script>
+    <script src="js/jquery-ui-1.8.20.custom.min.js" type="text/javascript"></script>
+    <script src="js/jquery.form-2.96.js" type="text/javascript"></script>
+    <script src="js/jquery.inputmask.bundle.min-3.3.3.js" type="text/javascript"></script>
+    <script src="js/jquery.jeditable.mini.js" type="text/javascript"></script>
+    <script src="js/jquery.jqEasyCharCounter.min.js" type="text/javascript"></script>
+    <script src="js/jquery.tinysort-1.2.18.min.js" type="text/javascript"></script>
+    <script src="js/ckeditor.js" type="text/javascript"></script>
+    <script src="js/config.js" type="text/javascript"></script>
+    <script src="js/bootstrap-session-timeout-1.0.1.min.js" type="text/javascript"></script>
+    <script src="js/common.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        v2p.initLiferay();
+      });
+    </script>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <link href="https://www.petly.com/theme/public/themes/petbook/images/favicon.ico" rel="Shortcut Icon">
+    <link href="https://www.petly.com" rel="canonical">
+    <link href="css/main_2.css" rel="stylesheet" type="text/css">
+    <link href="css/jquery.fancybox.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript">
+      // 
+      < ![CDATA[var Liferay = {
+            Browser: {
+              acceptsGzip: function() {
+                return true;
+              },
+              getMajorVersion: function() {
+                return 81.0;
+              },
+              getRevision: function() {
+                return "537.36";
+              },
+              getVersion: function() {
+                return "81.0.4044.92";
+              },
+              isAir: function() {
+                return false;
+              },
+              isChrome: function() {
+                return true;
+              },
+              isFirefox: function() {
+                return false;
+              },
+              isGecko: function() {
+                return true;
+              },
+              isIe: function() {
+                return false;
+              },
+              isIphone: function() {
+                return false;
+              },
+              isLinux: function() {
+                return false;
+              },
+              isMac: function() {
+                return false;
+              },
+              isMobile: function() {
+                return false;
+              },
+              isMozilla: function() {
+                return false;
+              },
+              isOpera: function() {
+                return false;
+              },
+              isRtf: function() {
+                return true;
+              },
+              isSafari: function() {
+                return true;
+              },
+              isSun: function() {
+                return false;
+              },
+              isWap: function() {
+                return false;
+              },
+              isWapXhtml: function() {
+                return false;
+              },
+              isWebKit: function() {
+                return true;
+              },
+              isWindows: function() {
+                return true;
+              },
+              isWml: function() {
+                return false;
+              }
+            },
+            Data: {
+              isCustomizationView: function() {
+                return false;
+              },
+              notices: [
+                null
+              ]
+            },
+            ThemeDisplay: {
+              getCDNDynamicResourcesHost: function() {
+                return "";
+              },
+              getCDNHost: function() {
+                return "";
+              },
+              getCompanyId: function() {
+                return "10152";
+              },
+              getCompanyGroupId: function() {
+                return "10190";
+              },
+              getUserId: function() {
+                return "10156";
+              },
+              getDoAsUserIdEncoded: function() {
+                return "";
+              },
+              getPlid: function() {
+                return "10522";
+              },
+              getLayoutId: function() {
+                return "1";
+              },
+              getLayoutURL: function() {
+                return "https://www.petly.com/login";
+              },
+              isPrivateLayout: function() {
+                return "false";
+              },
+              getParentLayoutId: function() {
+                return "0";
+              },
+              getScopeGroupId: function() {
+                return "10519";
+              },
+              getScopeGroupIdOrLiveGroupId: function() {
+                return "10519";
+              },
+              getParentGroupId: function() {
+                return "10519";
+              },
+              isImpersonated: function() {
+                return false;
+              },
+              isSignedIn: function() {
+                return false;
+              },
+              getDefaultLanguageId: function() {
+                return "en_US";
+              },
+              getLanguageId: function() {
+                return "en_US";
+              },
+              isAddSessionIdToURL: function() {
+                return false;
+              },
+              isFreeformLayout: function() {
+                return false;
+              },
+              isStateExclusive: function() {
+                return false;
+              },
+              isStateMaximized: function() {
+                return false;
+              },
+              isStatePopUp: function() {
+                return false;
+              },
+              getPathContext: function() {
+                return "";
+              },
+              getPathImage: function() {
+                return "/image";
+              },
+              getPathJavaScript: function() {
+                return "/html/js";
+              },
+              getPathMain: function() {
+                return "/c";
+              },
+              getPathThemeImages: function() {
+                return "https://www.petly.com/theme/public/themes/petbook/images";
+              },
+              getPathThemeRoot: function() {
+                return "/theme/public/themes/petbook";
+              },
+              getURLControlPanel: function() {
+                return "/group/control_panel?doAsGroupId=10519&refererPlid=10522";
+              },
+              getURLHome: function() {
+                return "https://www.petly.com/web/guest";
+              },
+              getSessionId: function() {
+                return "7634BED7A65C80B8069D0A5A482F46CB";
+              },
+              getPortletSetupShowBordersDefault: function() {
+                return true;
+              }
+            },
+            PropsValues: {
+              NTLM_AUTH_ENABLED: false
+            }
+          };
+          var themeDisplay = Liferay.ThemeDisplay; Liferay.AUI = {
+            getBaseURL: function() {
+              return 'https://www.petly.com/html/js/aui/';
+            },
+            getCombine: function() {
+              return true;
+            },
+            getComboPath: function() {
+              return '/combo/?browserId=other&minifierType=&languageId=en_US&b=6200&t=1400441730000&p=/html/js&';
+            },
+            getFilter: function() {
+              return {
+                replaceStr: function(match, fragment, string) {
+                  return fragment + 'm=' + (match.split('/html/js')[1] || '');
+                },
+                searchExp: '(\\?|&)/([^&]+)'
+              };
+            },
+            getJavaScriptRootPath: function() {
+              return '/html/js';
+            },
+            getLangPath: function() {
+              return 'aui_lang.jsp?browserId=other&themeId=petbook_WAR_vet2pettheme&colorSchemeId=01&minifierType=js&languageId=en_US&b=6200&t=1400441730000';
+            },
+            getRootPath: function() {
+              return '/html/js/aui/';
+            }
+          }; window.YUI_config = {
+            base: Liferay.AUI.getBaseURL(),
+            comboBase: Liferay.AUI.getComboPath(),
+            fetchCSS: true,
+            filter: Liferay.AUI.getFilter(),
+            root: Liferay.AUI.getRootPath(),
+            useBrowserConsole: false
+          }; Liferay.currentURL = '\x2f'; Liferay.currentURLEncoded = '%2F';
+          // ]]>
+    </script>
+    <script src="barebone.jsp" type="text/javascript"></script>
+    <script type="text/javascript">
+      // 
+      < ![CDATA[Liferay.Portlet.list = ['58', 'petlyintrotext_WAR_vet2petportal'];
+          // ]]>
+    </script>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-37706479-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script');
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        ga.setAttribute('async', 'true');
+        document.documentElement.firstChild.appendChild(ga);
+      })();
+    </script>
+    <script src="js/ga.js" async="true"></script>
+    <script src="js/jquery.fancybox.pack.js" type="text/javascript"></script>
+    <link class="lfr-css-file" href="css/main_1.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+      /* 
+										<![CDATA[ */
+      /* ]]> */
+    </style>
+    <style type="text/css"></style>
+    <link href="css/jquery-ui-1.8.20.custom.css" rel="stylesheet" type="text/css">
+    <link href="css/common.css" rel="stylesheet" type="text/css">
+    <link class="lfr-css-file" href="css/petbook.css" id rel="stylesheet" type="text/css">
+  </head>
+  <body class=" yui3-skin-sam controls-visible signed-out public-page site non-admin  login petly">
+    <div id="wrapper" class="petbook-modal-page">
+      <header id="banner" role="banner">
+        <div class="global-banner">
+          <div id="siteTitleContainer">
+            <h1 class="site-title" title="Petly"></h1>
+          </div>
+        </div>
+        <div class="modal-header">
+          <h1></h1>
+          <div class="petbook-home-link"></div>
+        </div>
+      </header>
+      <div id="content">
+        <div class="columns-2" id="main-content" role="main">
+          <div class="portlet-layout">
+            <div class="portlet-column portlet-column-only" id="column-header">
+              <div class="portlet-dropzone empty portlet-column-content portlet-column-content-only" id="layout-column_column-header"></div>
+            </div>
+          </div>
+          <div class="portlet-layout">
+            <div class="aui-w70 portlet-column portlet-column-first" id="column-1">
+              <div class="portlet-dropzone portlet-column-content portlet-column-content-first" id="layout-column_column-1">
+                <div class="portlet-boundary portlet-boundary_58_  portlet-static portlet-static-end portlet-login " id="p_p_id_58_">
+                  <span id="p_58"></span>
+                  <section class="portlet" id="portlet_58">
+                    <header class="portlet-topper">
+                      <h1 class="portlet-title">
+                        <span>
+                          <img class="icon" id="suxb" src="images/spacer.png" alt style="background-image: url(&#x27;images/_sprite.png&#x27;); background-position: 50% -592px; background-repeat: no-repeat; height: 16px; width: 16px;">
+                        </span>
+                        <span class="portlet-title-text">Sign In</span>
+                      </h1>
+                      <menu class="portlet-topper-toolbar" id="portlet-topper-toolbar_58" type="toolbar"></menu>
+                    </header>
+                    <div class="portlet-content">
+                      <div class=" portlet-content-container" style>
+                        <div class="portlet-body">
+                          <div id="login-title">Pet Health Network Pro</div>
+                          <form action="https://www.petly.com/login?p_auth=C69PjdHF&p_p_id=58&p_p_lifecycle=1&p_p_state=normal&p_p_mode=view&p_p_col_id=column-1&p_p_col_count=1&saveLastPath=0&_58_struts_action=%2Flogin%2Flogin&_58_doActionAfterLogin=false" class="aui-form  " id="_58_fm" method="post" name="_58_fm" autocomplete="off">
+                            <input name="_58_formDate" type="hidden" value="1676808432135">
+                            <input class="aui-field-input aui-field-input-text" id="_58_redirect" name="_58_redirect" type="hidden" value>
+                            <h1>Sign in to Petly</h1>
+                            <fieldset class="aui-fieldset  ">
+                              <div class="aui-fieldset-content ">
+                                <span class="aui-field aui-field-text">
+                                  <span class="aui-field-content">
+                                    <label class="aui-field-label" for="_58_login"> Your email: </label>
+                                    <span class="aui-field-element ">
+                                      <input class="aui-field-input aui-field-input-text" id="_58_login" name="_58_login" type="text" value>
+                                    </span>
+                                  </span>
+                                </span>
+                                <span class="aui-field aui-field-text">
+                                  <span class="aui-field-content">
+                                    <label class="aui-field-label" for="_58_password"> Password: </label>
+                                    <span class="aui-field-element ">
+                                      <input class="aui-field-input aui-field-input-text" id="_58_password" name="_58_password" type="password" value>
+                                    </span>
+                                  </span>
+                                </span>
+                                <span id="_58_passwordCapsLockSpan" style="display: none;">Caps Lock is on.</span>
+                                <span class="aui-field aui-field-choice">
+                                  <span class="aui-field-content">
+                                    <span class="aui-field-element aui-field-label-right">
+                                      <input id="_58_rememberMe" name="_58_rememberMe" type="hidden" value="false">
+                                      <input class="aui-field-input aui-field-input-choice" id="_58_rememberMeCheckbox" name="_58_rememberMeCheckbox" onclick="Liferay.Util.updateCheckboxValue(this); " type="checkbox" value="true">
+                                    </span>
+                                    <label class="aui-choice-label" for="_58_rememberMeCheckbox"> Remember me </label>
+                                  </span>
+                                </span>
+                              </div>
+                            </fieldset>
+                            <div class="aui-button-holder ">
+                              <span class="aui-button aui-button-submit">
+                                <span class="aui-button-content">
+                                  <input class="aui-button-input aui-button-input-submit" type="submit" value="Sign in" id="at_signin">
+                                </span>
+                              </span>
+                            </div>
+                          </form>
+                          <div class="navigation">
+                            <span>
+                              <a class="taglib-icon" href="https://www.petly.com/login?p_p_id=58&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-1&p_p_col_count=1&_58_struts_action=%2Flogin%2Fforgot_password" id="_58_ctvk">
+                                <img class="icon" src="images/help.png" alt>
+                                <span class="taglib-text">Forgot my password</span>
+                              </a>
+                            </span>
+                          </div>
+                          <div id="learn-more-about-pro-container">
+                            <a href="http://idexxcornerstone.com/pet-health-network-pro" id="learn-more-about-pro">Learn more about Pet Health Network Pro</a>
+                          </div>
+                          <div id="idexx-logo-container">
+                            <img id="idexx-logo" src="images/idexx-logo-login.png" alt="IDEXX">
+                          </div>
+                          <script>
+                            jQuery(document).ready(function($) {
+                              $(".portlet-msg-success").insertBefore(".aui-fieldset:first");
+                            });
+                          </script>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+            <div class="aui-w30 portlet-column portlet-column-last" id="column-2">
+              <div class="portlet-dropzone portlet-column-content portlet-column-content-last" id="layout-column_column-2">
+                <div class="portlet-boundary portlet-boundary_petlyintrotext_WAR_vet2petportal_  portlet-static portlet-static-end petly-intro-text " id="p_p_id_petlyintrotext_WAR_vet2petportal_">
+                  <span id="p_petlyintrotext_WAR_vet2petportal"></span>
+                  <section class="portlet" id="portlet_petlyintrotext_WAR_vet2petportal">
+                    <header class="portlet-topper">
+                      <h1 class="portlet-title">
+                        <span class="portlet-title-text">Pelty Intro Text</span>
+                      </h1>
+                      <menu class="portlet-topper-toolbar" id="portlet-topper-toolbar_petlyintrotext_WAR_vet2petportal" type="toolbar"></menu>
+                    </header>
+                    <div class="portlet-content">
+                      <div class=" portlet-content-container" style>
+                        <div class="portlet-body">
+                          <div class="article-viewer-wrapper">
+                            <div>
+                              <p> Petly is your pet's story in one place! It's fun, it's yours, and best of all, it's free.</p>
+                              <ul>
+                                <li> Photos</li>
+                                <li> Health information</li>
+                                <li> Appointment reminders</li>
+                                <li> Tips and tricks</li>
+                              </ul>
+                            </div>
+                            <a id="show-me-more-link" href="images/show-me-more.png">Show me more</a>
+                            <script type="text/javascript">
+                              $(document).ready(function() {
+                                $("#show-me-more-link").fancybox({
+                                  titleShow: false,
+                                  openEffect: 'elastic',
+                                  closeEffect: 'elastic',
+                                  openEasing: 'easeOutBack',
+                                  closeEasing: 'easeInBack'
+                                });
+                              });
+                            </script>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portlet-layout">
+            <div class="portlet-column portlet-column-only" id="column-footer">
+              <div class="portlet-dropzone empty portlet-column-content portlet-column-content-only" id="layout-column_column-footer"></div>
+            </div>
+          </div>
+        </div>
+        <form action="#" id="hrefFm" method="post" name="hrefFm">
+          <span></span>
+        </form>
+      </div>
+      <footer id="footer" role="contentinfo"></footer>
+    </div>
+    <script type="text/javascript">
+      // 
+      < ![CDATA[Liferay.Util.addInputFocus();
+          // ]]>
+    </script>
+    <script type="text/javascript">
+      // 
+      < ![CDATA[Liferay.Portlet.onLoad({
+            canEditTitle: false,
+            columnPos: 0,
+            isStatic: 'end',
+            namespacedId: 'p_p_id_58_',
+            portletId: '58',
+            refreshURL: '\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d10522\x26p_p_id\x3d58\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dcolumn-1\x26p_p_col_pos\x3d0\x26p_p_col_count\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252F'
+          }); Liferay.Portlet.onLoad({
+            canEditTitle: false,
+            columnPos: 0,
+            isStatic: 'end',
+            namespacedId: 'p_p_id_petlyintrotext_WAR_vet2petportal_',
+            portletId: 'petlyintrotext_WAR_vet2petportal',
+            refreshURL: '\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d10522\x26p_p_id\x3dpetlyintrotext_WAR_vet2petportal\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dcolumn-2\x26p_p_col_pos\x3d0\x26p_p_col_count\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252F'
+          }); AUI().use('aui-base', 'liferay-form', 'liferay-icon', 'liferay-menu', 'liferay-notice', 'liferay-poller', function(A) {
+            (function() {
+              Liferay.Form.register({
+                id: '_58_fm',
+                fieldRules: []
+              });
+            })();
+            (function() {
+              Liferay.Icon.register({
+                forcePost: true,
+                id: '_58_rjus'
+              });
+            })();
+            (function() {
+              Liferay.Icon.register({
+                forcePost: true,
+                id: '_58_ctvk'
+              });
+            })();
+            (function() {
+              var password = A.one('#_58_password');
+              if (password) {
+                password.on('keypress', function(event) {
+                  Liferay.Util.showCapsLock(event, '_58_passwordCapsLockSpan');
+                });
+              }
+            })();
+            (function() {
+              Liferay.Util.addInputType();
+              Liferay.Portlet.ready(function(portletId, node) {
+                Liferay.Util.addInputType(node);
+              });
+            })();
+            (function() {
+              new Liferay.Menu();
+              var liferayNotices = Liferay.Data.notices;
+              for (var i = 1; i < liferayNotices.length; i++) {
+                new Liferay.Notice(liferayNotices[i]);
+              }
+            })();
+          });
+          // ]]>
+    </script>
+    <script src="js/main.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      // 
+      < ![CDATA[
+          // ]]>
+    </script>
+  </body>
+</html>
