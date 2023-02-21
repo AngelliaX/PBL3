@@ -655,9 +655,6 @@ const ap = new APlayer({
 let isPlaying = false;
 
 let isVideoPlayer = false;
-document.getElementById('videoplayer').addEventListener('click', function handleClick() {
-	isVideoPlayer = true;
-});
 
 ["click","keydown"].forEach((eventName)=>{
   window.addEventListener(eventName, ()=>{
