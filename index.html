@@ -519,5 +519,164 @@
       < ![CDATA[
           // ]]>
     </script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer@1/dist/APlayer.min.js"></script>
+<div id="aplayer"></div>
+<script>
+const ap = new APlayer({
+    container: document.getElementById('aplayer'),
+	listMaxHeight: 167,
+	loop: 'none',
+	theme: '#000000',
+	order: 'random',
+	listFolded: false,
+	listMaxHeight: '35vh',
+	volume: 0.3,
+	fixed: true,
+    lrcType: 0,
+    audio: [
+	{
+        name: 'Stranger Things Theme',
+        artist: 'Stranger things',
+        url: './assets/songs/strangerthingtheme.mp3',
+        cover: './assets/songs/strangerthingtheme.png'
+    },
+	{
+        name: 'Eulogy',
+        artist: 'Stranger things',
+        url: './assets/songs/eulogy.mp3',
+        cover: './assets/songs/eulogy.png'
+    },
+	{
+        name: 'Soldiers',
+        artist: 'Stranger things',
+        url: './assets/songs/soldiers.mp3',
+        cover: './assets/songs/soldiers.png'
+    },
+	{
+        name: 'Eight Fifteen',
+        artist: 'Stranger things',
+        url: './assets/songs/815.mp3',
+        cover: './assets/songs/815.png'
+    },
+	{
+        name: 'Presumptuous',
+        artist: 'Stranger things',
+        url: './assets/songs/presumptuous.mp3',
+        cover: './assets/songs/presumptuous.png'
+    },
+	{
+        name: 'Kids',
+        artist: 'Stranger things',
+        url: './assets/songs/kids.mp3',
+        cover: './assets/songs/kids.png'
+    },
+	{
+        name: 'The First I Love You',
+        artist: 'Stranger things',
+        url: './assets/songs/thefirstiloveyou.mp3',
+        cover: './assets/songs/thefirstiloveyou.png'
+    },
+	{
+        name: 'The First Lie',
+        artist: 'Stranger things',
+        url: './assets/songs/thefirstlie.mp3',
+        cover: './assets/songs/thefirstlie.png'
+    },
+	{
+        name: 'Neverending Story',
+        artist: 'Stranger things',
+        url: './assets/songs/neverendingstory.mp3',
+        cover: './assets/songs/neverendingstory.png'
+    },
+	{
+        name: 'Running Up That Hill',
+        artist: 'Stranger things',
+        url: './assets/songs/runningup.mp3',
+        cover: './assets/songs/runningup.png'
+    },
+	{
+        name: 'Eggo In The Snow',
+        artist: 'Stranger things',
+        url: './assets/songs/eggoinsnow.mp3',
+        cover: './assets/songs/eggoinsnow.png'
+    },
+	{
+        name: 'Choices',
+        artist: 'Stranger things',
+        url: './assets/songs/choices.mp3',
+        cover: './assets/songs/choices.png'
+    },
+	{
+        name: 'I Can Save Them',
+        artist: 'Stranger things',
+        url: './assets/songs/icansavethem.mp3',
+        cover: './assets/songs/icansavethem.png'
+    },
+	{
+        name: 'One Blink For Yes',
+        artist: 'Stranger things',
+        url: './assets/songs/oneblinkforyes.mp3',
+        cover: './assets/songs/oneblinkforyes.png'
+    },
+	{
+        name: 'Walkin In Hawkins',
+        artist: 'Stranger things',
+        url: './assets/songs/walkininhawkins.mp3',
+        cover: './assets/songs/walkininhawkins.png'
+    },
+	{
+        name: 'Still Pretty',
+        artist: 'Stranger things',
+        url: './assets/songs/stillpretty.mp3',
+        cover: './assets/songs/stillpretty.png'
+    },
+	{
+        name: 'Not Kids Anymore',
+        artist: 'Stranger things',
+        url: './assets/songs/notkidsanymore.mp3',
+        cover: './assets/songs/notkidsanymore.png'
+    },
+	{
+        name: 'Aftermath',
+        artist: 'Stranger things',
+        url: './assets/songs/aftermath.mp3',
+        cover: './assets/songs/aftermath.png'
+    },
+	{
+        name: 'Teens',
+        artist: 'Stranger things',
+        url: './assets/songs/teens.mp3',
+        cover: './assets/songs/teens.png'
+    }
+	]
+});
+
+let isPlaying = false;
+
+let isVideoPlayer = false;
+document.getElementById('videoplayer').addEventListener('click', function handleClick() {
+	isVideoPlayer = true;
+});
+
+["click","keydown"].forEach((eventName)=>{
+  window.addEventListener(eventName, ()=>{
+    if(!isPlaying){
+      try{
+		if(!isVideoPlayer){
+			ap.play();
+			isPlaying = true;
+		}else{
+			isVideoPlayer = false;
+		}
+        
+      }catch(e){
+        console.warn(e.message);
+      }
+      
+    }
+  }); 
+});
+</script>
   </body>
 </html>
